@@ -1,6 +1,6 @@
 # CST_NET_LAB
 
-##### This project is for test purposes only for students ;
+##### This project is for test purposes for students ;
 ##### TODO items 
 
 * Update user and save methods do it in one method
