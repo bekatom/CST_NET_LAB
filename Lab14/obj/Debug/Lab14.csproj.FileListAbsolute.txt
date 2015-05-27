@@ -1,0 +1,13 @@
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\UsersPrject.exe.config
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\UsersPrject.exe
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\UsersPrject.pdb
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\EntityFramework.dll
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\EntityFramework.xml
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\obj\Debug\UsersPrject.Form1.resources
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\obj\Debug\UsersPrject.Properties.Resources.resources
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\obj\Debug\Lab14.csproj.GenerateResource.Cache
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\obj\Debug\UsersPrject.exe
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\obj\Debug\UsersPrject.pdb
+C:\Users\Beka\Projects\CST_NET_LAB\Lab14\obj\Debug\Lab14.csprojResolveAssemblyReference.cache

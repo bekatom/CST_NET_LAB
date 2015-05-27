@@ -10,3 +10,16 @@ C:\Users\Beka\SkyDrive\Beka\CST\NET\LABS\lab8\UsersPrject\UsersPrject\obj\Debug\
 C:\Users\Beka\SkyDrive\Beka\CST\NET\LABS\lab8\UsersPrject\UsersPrject\obj\Debug\UsersPrject.csproj.GenerateResource.Cache
 C:\Users\Beka\SkyDrive\Beka\CST\NET\LABS\lab8\UsersPrject\UsersPrject\obj\Debug\UsersPrject.exe
 C:\Users\Beka\SkyDrive\Beka\CST\NET\LABS\lab8\UsersPrject\UsersPrject\obj\Debug\UsersPrject.pdb
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\UsersPrject.exe.config
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\obj\Debug\UsersPrject.exe
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\obj\Debug\UsersPrject.pdb
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\UsersPrject.exe
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\UsersPrject.pdb
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\EntityFramework.dll
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\EntityFramework.xml
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\obj\Debug\UsersPrject.csprojResolveAssemblyReference.cache
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\obj\Debug\UsersPrject.Form1.resources
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\obj\Debug\UsersPrject.Properties.Resources.resources
+C:\Users\Beka\Projects\CST_NET_LAB\UsersPrject\obj\Debug\UsersPrject.csproj.GenerateResource.Cache

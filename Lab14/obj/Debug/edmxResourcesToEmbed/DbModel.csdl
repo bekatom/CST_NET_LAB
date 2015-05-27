@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TEMPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TEMPEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Orders" EntityType="TEMPModel.Order" />
+    <EntitySet Name="Positions" EntityType="TEMPModel.Position" />
+    <EntitySet Name="Users" EntityType="TEMPModel.User" />
+    <AssociationSet Name="FK__Orders__UserId__21B6055D" Association="TEMPModel.FK__Orders__UserId__21B6055D">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Position" Association="TEMPModel.FK_Users_Position">
+      <End Role="Position" EntitySet="Positions" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="orderNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="productName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="createDate" Type="DateTime" Precision="3" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="TEMPModel.FK__Orders__UserId__21B6055D" FromRole="Order" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Users" Relationship="TEMPModel.FK_Users_Position" FromRole="Position" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="createDate" Type="DateTime" Precision="3" />
+    <Property Name="PositionId" Type="Int32" />
+    <NavigationProperty Name="Orders" Relationship="TEMPModel.FK__Orders__UserId__21B6055D" FromRole="User" ToRole="Order" />
+    <NavigationProperty Name="Position" Relationship="TEMPModel.FK_Users_Position" FromRole="User" ToRole="Position" />
+  </EntityType>
+  <Association Name="FK__Orders__UserId__21B6055D">
+    <End Type="TEMPModel.User" Role="User" Multiplicity="1" />
+    <End Type="TEMPModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Position">
+    <End Type="TEMPModel.Position" Role="Position" Multiplicity="0..1" />
+    <End Type="TEMPModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Position">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
